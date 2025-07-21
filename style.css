@@ -561,6 +561,16 @@ footer p {
     display: none;
   }
 
+  .projeto {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    min-height: 180px;
+    background-size: cover;
+    background-position: center;
+  }
+
   .contato {
     display: block;
     padding: 0;
