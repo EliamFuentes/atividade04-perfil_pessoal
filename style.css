@@ -52,7 +52,7 @@ h2 {
   line-height: 1.2;
   transition: 0.2s ease-in-out;
   text-align: center;
-  margin-bottom: 4rem;
+  margin-bottom: 2.5rem;
 }
 
 body {
@@ -228,63 +228,22 @@ body {
   vertical-align: middle;
 }
 
-/* Projeto cards */
-.card {
-  padding: 1rem;
-  background: var(--card-background);
-  color: #ffffff;
-  border-radius: 5px;
-  transition: 0.4s ease-in-out;
-  cursor: pointer;
-}
-
-.card a {
-  color: #ffffff;
-  transition: 0.25s ease-in-out;
-  font-size: 1.1rem;
-  margin-right: 0.3rem;
-}
-
-.card a:hover {
-  color: var(--primary-color);
-}
-
-.card:hover {
-  box-shadow: inset 0 100px 1000px 10px rgba(0, 0, 0, 0.8);
-}
-
-.card:hover .projeto-info {
-  opacity: 1;
-}
-
 /* Projetos */
 #projetos {
   display: flex;
   flex-direction: column;
 }
 
-#projetos .btn {
-  align-self: center;
-  margin: 2rem 0;
-}
-
 .projeto {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-auto-rows: minmax(250px, auto);
   grid-gap: 0.9rem;
 }
 
-.titulo-projeto {
-  margin-bottom: 2rem;
-}
-
-.card .projeto-bio p {
-  font-size: 0.83rem;
-}
-
-.card .projeto-bio h3 {
-  font-size: 0.9rem;
+#projetos .btn {
+  align-self: center;
+  margin: 2rem 0;
 }
 
 .projeto-info {
@@ -305,42 +264,43 @@ body {
 
 /* Imagens Projetos */
 
-/* Projeto 1 */
-.card:nth-child(1) {
-  background: url(assets/project/imagem_portfolio.png);
+.projeto-img {
+  width: 100%;
 }
 
-/* Projeto 2 */
-.card:nth-child(2) {
-  background: url(/assets/project/img_lista_tarefa.PNG) center center/cover;
+/* Projeto cards */
+.card {
+  background: var(--card-background);
+  color: #ffffff;
+  transition: 0.4s ease-in-out;
+  cursor: pointer;
 }
 
-/* Projeto 3 */
-.card:nth-child(3) {
-  background: url(/assets/project/imagem_movie.PNG) center center/cover;
+.card .projeto-bio h3 {
+  font-size: 0.9rem;
 }
 
-/* Projeto 4 */
-.card:nth-child(4) {
-  background: url(/assets/project/imagem_secretword.webp) center center/cover;
+.card a {
+  color: #ffffff;
+  transition: 0.25s ease-in-out;
+  font-size: 1.1rem;
+  margin-right: 0.3rem;
 }
 
-/* Projeto 5 */
-.card:nth-child(5) {
-  background: url(/assets/project/imagem_site_mario.png);
+.card .projeto-bio p {
+  font-size: 0.83rem;
 }
 
-/* Projeto 6 */
-.card:nth-child(6) {
-  background: url(/assets/project/imagem_miniBlog.PNG) center center/cover;
+.card a:hover {
+  color: var(--primary-color);
 }
 
-.card:nth-child(1),
-.card:nth-child(5) {
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-color: var(--bg-card);
+.card:hover {
+  box-shadow: inset 0 100px 1000px 10px rgba(0, 0, 0, 0.8);
+}
+
+.card:hover .projeto-info {
+  opacity: 1;
 }
 
 /* Contato */
