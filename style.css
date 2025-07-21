@@ -198,12 +198,6 @@ body {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
-.content-text p {
-  padding: 0.5rem;
-  margin: 0 auto;
-  max-width: 700px;
-}
-
 .btn {
   display: inline-block;
   padding: 0.75rem 1.9rem;
@@ -236,71 +230,50 @@ body {
 
 .projeto {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-auto-rows: minmax(250px, auto);
+  grid-template-columns: repeat(3, 1fr);
   grid-gap: 0.9rem;
 }
 
-#projetos .btn {
-  align-self: center;
-  margin: 2rem 0;
+.projeto-img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  display: block;
+  border-radius: 8px 8px 0 0;
 }
 
 .projeto-info {
   display: flex;
   justify-content: space-between;
-  opacity: 0;
-  position: relative;
-  transition: 0.5s ease-in-out;
-}
-
-.projeto-bio {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  position: relative;
-  top: 160px;
-}
-
-/* Imagens Projetos */
-
-.projeto-img {
+  align-items: center;
+  padding: 1rem;
+  color: var(--cor-texto);
+  border-radius: 0 0 8px 8px;
   width: 100%;
+
+  background-color: var(--card-background);
 }
 
-/* Projeto cards */
-.card {
-  background: var(--card-background);
-  color: #ffffff;
-  transition: 0.4s ease-in-out;
-  cursor: pointer;
+.projeto-bio h3 {
+  font-size: 1rem;
+  margin: 0;
 }
 
-.card .projeto-bio h3 {
-  font-size: 0.9rem;
+.projeto-bio p {
+  font-size: 0.8rem;
+  margin: 0;
+  opacity: 0.8;
 }
 
-.card a {
-  color: #ffffff;
-  transition: 0.25s ease-in-out;
-  font-size: 1.1rem;
-  margin-right: 0.3rem;
+.projeto-link {
+  display: flex;
+  gap: 0.8rem;
 }
 
-.card .projeto-bio p {
-  font-size: 0.83rem;
-}
-
-.card a:hover {
-  color: var(--primary-color);
-}
-
-.card:hover {
-  box-shadow: inset 0 100px 1000px 10px rgba(0, 0, 0, 0.8);
-}
-
-.card:hover .projeto-info {
-  opacity: 1;
+.projeto-link a {
+  color: var(--cor-texto);
+  font-size: 1.2rem;
+  transition: color 0.3s;
 }
 
 /* Contato */
@@ -457,13 +430,10 @@ footer {
   text-align: center;
   padding: 1rem 2rem;
   box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.25);
-  margin-top: 4rem;
 }
 
 footer p {
   color: var(--cor-texto-secundario);
-  margin: 0;
-  font-weight: 400;
 }
 
 /* Responsividade */
