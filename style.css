@@ -307,32 +307,32 @@ body {
 
 /* Projeto 1 */
 .card:nth-child(1) {
-  background: url(../assets/project/imagem_portfolio.png);
+  background: url(assets/project/imagem_portfolio.png);
 }
 
 /* Projeto 2 */
 .card:nth-child(2) {
-  background: url(../assets/project/img_lista_tarefa.PNG) center center/cover;
+  background: url(/assets/project/img_lista_tarefa.PNG) center center/cover;
 }
 
 /* Projeto 3 */
 .card:nth-child(3) {
-  background: url(../assets/project/imagem_movie.PNG) center center/cover;
+  background: url(/assets/project/imagem_movie.PNG) center center/cover;
 }
 
 /* Projeto 4 */
 .card:nth-child(4) {
-  background: url(../assets/project/imagem_secretword.webp) center center/cover;
+  background: url(/assets/project/imagem_secretword.webp) center center/cover;
 }
 
 /* Projeto 5 */
 .card:nth-child(5) {
-  background: url(../assets/project/imagem_site_mario.png);
+  background: url(/assets/project/imagem_site_mario.png);
 }
 
 /* Projeto 6 */
 .card:nth-child(6) {
-  background: url(../assets/project/imagem_miniBlog.PNG) center center/cover;
+  background: url(/assets/project/imagem_miniBlog.PNG) center center/cover;
 }
 
 .card:nth-child(1),
