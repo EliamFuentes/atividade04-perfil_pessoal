@@ -147,7 +147,7 @@ body {
   text-align: center;
   margin: 1.5rem 0;
 }
-
+/* Sobre mim */
 .texto-sobre-mim {
   padding: 0 4rem;
 }
@@ -159,6 +159,7 @@ body {
   text-align: justify;
 }
 
+/* Habilidades */
 .habilidades {
   padding: 2rem;
 }
@@ -321,7 +322,7 @@ body {
   font-size: 1.2rem;
 }
 
-/* Formulário */
+/* Lado Direito - Formulário */
 .contato-form {
   width: 50%;
   max-width: 500px;
@@ -337,13 +338,11 @@ body {
   gap: 1rem;
 }
 
-/* Labels */
 .form-contato label {
   font-weight: 600;
   color: black;
 }
 
-/* Inputs e Textarea */
 .form-contato input,
 .form-contato textarea {
   padding: 0.8rem 1rem;
@@ -355,7 +354,6 @@ body {
   transition: border-color 0.3s, box-shadow 0.3s;
 }
 
-/* Efeito ao focar nos campos */
 .form-contato input:focus,
 .form-contato textarea:focus {
   border-color: var(--cor-principal);
@@ -363,7 +361,6 @@ body {
   outline: none;
 }
 
-/* Botão */
 .form-contato button {
   background-color: var(--cor-principal);
   color: var(--cor-texto-secundario);
@@ -376,7 +373,6 @@ body {
   transition: background-color 0.3s, transform 0.3s;
 }
 
-/* Hover do botão */
 .form-contato button:hover {
   background-color: var(--cor-hover);
   transform: translateY(-2px);
